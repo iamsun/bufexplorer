@@ -492,6 +492,7 @@ function! s:MapKeys()
     nnoremap <script> <silent> <nowait> <buffer> <2-leftmouse> :call <SID>SelectBuffer()<CR>
     nnoremap <script> <silent> <nowait> <buffer> <CR>          :call <SID>SelectBuffer()<CR>
     nnoremap <script> <silent> <nowait> <buffer> <F1>          :call <SID>ToggleHelp()<CR>
+    nnoremap <script> <silent> <nowait> <buffer> ?             :call <SID>ToggleHelp()<CR>
     nnoremap <script> <silent> <nowait> <buffer> <s-cr>        :call <SID>SelectBuffer("tab")<CR>
     nnoremap <script> <silent> <nowait> <buffer> B             :call <SID>ToggleOnlyOneTab()<CR>
     nnoremap <script> <silent> <nowait> <buffer> b             :call <SID>SelectBuffer("ask")<CR>
@@ -504,6 +505,7 @@ function! s:MapKeys()
     nnoremap <script> <silent> <nowait> <buffer> o             :call <SID>SelectBuffer()<CR>
     nnoremap <script> <silent> <nowait> <buffer> p             :call <SID>ToggleSplitOutPathName()<CR>
     nnoremap <script> <silent> <nowait> <buffer> q             :call <SID>Close()<CR>
+    nnoremap <script> <silent> <nowait> <buffer> <Esc>         :call <SID>Close()<CR>
     nnoremap <script> <silent> <nowait> <buffer> r             :call <SID>SortReverse()<CR>
     nnoremap <script> <silent> <nowait> <buffer> R             :call <SID>ToggleShowRelativePath()<CR>
     nnoremap <script> <silent> <nowait> <buffer> s             :call <SID>SortSelect()<CR>
